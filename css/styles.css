@@ -746,10 +746,10 @@ button.portfolio:focus {
 }
 
 .modal-form-term:checked + .modal-form-term-desc::before {
-  /* fill: var(--accent-text-color); */
-  /* background-color: var(--accent-text-color); */
+  /* fill: var(--accent-text-color);
+  background-color: var(--accent-text-color); */
   border: none;
-  background-image: url("../images/sprite.svg#check-mark");
+  background-image: url("../images/check-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
