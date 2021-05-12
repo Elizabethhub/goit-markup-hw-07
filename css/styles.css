@@ -691,14 +691,19 @@ button.portfolio:focus {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
   resize: none;
   margin-bottom: 20px;
+  margin-top: 4px;
 }
 .contact-form-message:focus {
   outline: none;
   border-color: var(--accent-text-color);
 }
 .contact-form-message::placeholder {
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -720,6 +725,7 @@ button.portfolio:focus {
 .modal-form-input-wrapper {
   display: block;
   position: relative;
+  margin-top: 4px;
 }
 .modal-form-term-desc {
   display: flex;
@@ -727,35 +733,54 @@ button.portfolio:focus {
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
+  margin-bottom: 30px;
 }
-.modal-form-term-desc::before {
+/* .modal-form-term-desc::before {
   display: inline-block;
   content: "";
   width: 16px;
   height: 15px;
-  outline: 1px solid #000000;
+  
+  margin-right: 7px;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 2px solid #212121;
+  outline: none;
+} */
+
+.modal-form-term-link {
+  color: var(--accent-text-color);
+}
+
+/* .modal-form-term:checked + .modal-form-term-desc::before {
+  /* fill: var(--accent-text-color);
+  background-color: var(--accent-text-color); */
+/* border: none;
+  background-image: url("../images/check-mark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/* } */
+
+.modal-check-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 15px;
   margin-right: 7px;
   cursor: pointer;
   border-radius: 2px;
   border: 2px solid #212121;
   outline: none;
 }
-
-.modal-form-term-link {
-  color: var(--accent-text-color);
+.modal-check-mark-icon {
+  width: 12px;
+  height: 9px;
 }
-
-.modal-form-term:checked + .modal-form-term-desc::before {
-  /* fill: var(--accent-text-color);
-  background-color: var(--accent-text-color); */
+.modal-form-term:focus + .modal-form-term-desc .modal-check-icon {
+  background-color: var(--accent-text-color);
   border: none;
-  background-image: url("../images/check-mark.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.modal-form-term:focus + .modal-form-term-desc::before {
 }
 
 .visually-hidden {
