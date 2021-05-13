@@ -18,6 +18,10 @@
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
+
+  &.light-text {
+    color: var(--footer-text-color);
+  }
 }
 .what-we-do-title {
   position: absolute;
@@ -38,9 +42,7 @@
 .services-img {
   display: block;
 }
-.features-title.light-text {
-  color: var(--footer-text-color);
-}
+
 .what-we-do {
   position: relative;
   flex-basis: calc((100% - 90px) / 3);
