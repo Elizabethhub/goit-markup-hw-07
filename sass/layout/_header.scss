@@ -1,8 +1,18 @@
-.page-header {
+.header {
   letter-spacing: 0.02em;
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .logo {
@@ -19,14 +29,8 @@
 .colortext {
   color: var(--accent-text-color);
 }
-.main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .site-nav,
-.header-nav,
 .header-contacts {
   display: flex;
   align-items: center;
@@ -76,8 +80,8 @@
   line-height: 1.71;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-section-link.header,
-.contacts-section-link-tel.header {
+.contacts-section-link,
+.contacts-section-link-tel {
   color: inherit;
   font-weight: 500;
   font-size: 14px;
